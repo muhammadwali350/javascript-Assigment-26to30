@@ -22,6 +22,7 @@
 // if(number < 0 ){
 // document.write("number that you enter is :" + " " + number + "</br>" + "round off number is :" + " " + roundoffNum + "</br>" + "ciel number is :" + " " + ceilNum + "</br>" +  "floor Number is :" + " " + floorNum)
 
+
 // }
 // else{
 //     alert ("please enter a number")
@@ -86,3 +87,34 @@
 // else{
 //     alert("try agin later!")
 // }
+
+
+// Class Time Task //
+
+// var date = new Date();
+
+// console.log(date);
+
+
+//  var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//  var now = new Date();
+//  var theDay = now.getDay();
+//  var nameOfToday = dayNames[theDay];
+//  console.log(nameOfToday);
+
+
+var dob = new Date("06/03/1998");  
+//calculate month difference from current date in time  
+var month_diff = Date.now() - dob.getTime();  
+// console.log(month_diff);  
+// //convert the calculated difference in date format  
+var age_dt = new Date(month_diff);   
+//   console.log(age_dt);
+// //extract year from date      
+var year = age_dt.getUTCFullYear();  
+//   console.log(year);
+// //now calculate the age of the user  
+var age = Math.abs(year - 1970);  
+//   console.log(age);
+// //display the calculated age  
+document.write("Age of the date entered: " + age + " years");
